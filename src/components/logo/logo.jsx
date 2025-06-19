@@ -6,7 +6,7 @@ import Link from '@mui/material/Link';
 import { useTheme } from '@mui/material/styles';
 
 import { RouterLink } from 'src/routes/components';
-import logoImage from '../../../public/head-white.png';
+import logoImage from '../../../public/head-dark.png';
 
 // ----------------------------------------------------------------------
 
