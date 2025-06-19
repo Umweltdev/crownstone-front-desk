@@ -6,7 +6,7 @@ import Link from '@mui/material/Link';
 import { useTheme } from '@mui/material/styles';
 
 import { RouterLink } from 'src/routes/components';
-import logoImage from '/head-white.png';
+import logoImage from '../../../public/head-white.png';
 
 // ----------------------------------------------------------------------
 
@@ -22,7 +22,11 @@ const Logo = forwardRef(({ disabledLink = false, sx, ...other }, ref) => {
   // OR using local (public folder)
   // -------------------------------------------------------
   const logo = (
-    <Box component="img" src={logoImage} sx={{ width: 70, height: "auto", cursor: 'pointer', ...sx }} />
+    <Box
+      component="img"
+      src={logoImage}
+      sx={{ width: 70, height: 'auto', cursor: 'pointer', ...sx }}
+    />
   );
 
   // const logo = (

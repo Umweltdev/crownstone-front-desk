@@ -30,7 +30,7 @@ export default function RoomTableRow({ row, selected, onEditRow, onDeleteRow }) 
         <TableCell>{`₦${price.toLocaleString()}`}</TableCell>
         <TableCell>{maxPeople} Adults</TableCell>
         <TableCell>
-          {description.length > 50 ? `${description.substring(0, 30)}...` : description}
+          {description?.length > 50 ? `${description?.substring(0, 30)}...` : description}
         </TableCell>
         <TableCell align="right" sx={{ px: 1 }}>
           <IconButton color={popover.open ? 'inherit' : 'default'} onClick={popover.onOpen}>
