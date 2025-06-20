@@ -320,7 +320,7 @@ export default function UserNewEditForm({ currentUser }) {
                           Price:
                         </Typography>
                         <Typography variant="body1" fontWeight="medium">
-                          ₦{room?.amount?.toLocaleString() || 'N/A'}
+                          €{room?.amount?.toLocaleString() || 'N/A'}
                         </Typography>
                        
                       </Grid>
@@ -348,7 +348,7 @@ export default function UserNewEditForm({ currentUser }) {
               InputProps={{
                 startAdornment: (
                   <Typography variant="body2" sx={{ mr: 1 }}>
-                    ₦
+                    €
                   </Typography>
                 ),
               }}

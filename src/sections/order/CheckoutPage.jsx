@@ -89,9 +89,16 @@ const CheckoutPage = ({ roomDetails, additionalCharges }) => {
     <Grid container spacing={3} justifyContent="center" sx={{ py: 1 }}>
       <Grid item xs={12} md={5}>
         <Paper elevation={3}>
-          <Box component="img" src={room.images?.[0] || '/placeholder.png'} alt={room.roomName} sx={{ width: '100%', height: 200, objectFit: 'cover' }} />
+          <Box
+            component="img"
+            src={room.images?.[0] || '/placeholder.png'}
+            alt={room.roomName}
+            sx={{ width: '100%', height: 200, objectFit: 'cover' }}
+          />
           <Box p={3}>
-            <Typography variant="h6">{room.roomName}, Room #{room.roomNumber}</Typography>
+            <Typography variant="h6">
+              {room.roomName}, Room #{room.roomNumber}
+            </Typography>
             <br />
             <LocalizationProvider dateAdapter={AdapterDateFns}>
               <DatePicker
@@ -100,7 +107,8 @@ const CheckoutPage = ({ roomDetails, additionalCharges }) => {
                 onChange={(newValue) => setCheckInDate(newValue ? new Date(newValue) : null)}
                 renderInput={(params) => <TextField {...params} fullWidth />}
               />
-              <br /><br />
+              <br />
+              <br />
               <DatePicker
                 label="Check-Out Date"
                 value={checkOutDate}
@@ -109,7 +117,7 @@ const CheckoutPage = ({ roomDetails, additionalCharges }) => {
               />
             </LocalizationProvider>
             <Divider sx={{ my: 2 }} />
-            <Typography variant="body2">Total Price: ₦{totalPrice.toLocaleString()}</Typography>
+            <Typography variant="body2">Total Price: €{totalPrice.toLocaleString()}</Typography>
           </Box>
         </Paper>
       </Grid>
@@ -119,14 +127,23 @@ const CheckoutPage = ({ roomDetails, additionalCharges }) => {
           <Typography variant="h5" sx={{ mb: 3 }}>
             Confirm Your Booking
           </Typography>
-          <Formik initialValues={{ name: '', email: '', phone: '', address: '' }} validationSchema={bookingSchema} onSubmit={handleBooking}>
+          <Formik
+            initialValues={{ name: '', email: '', phone: '', address: '' }}
+            validationSchema={bookingSchema}
+            onSubmit={handleBooking}
+          >
             {({ handleChange, handleSubmit }) => (
               <form onSubmit={handleSubmit}>
                 <Stack spacing={2}>
                   <TextField label="Full Name" name="name" onChange={handleChange} fullWidth />
                   <TextField label="Email Address" name="email" onChange={handleChange} fullWidth />
                   <TextField label="Phone Number" name="phone" onChange={handleChange} fullWidth />
-                  <TextField label="Full Address" name="address" onChange={handleChange} fullWidth />
+                  <TextField
+                    label="Full Address"
+                    name="address"
+                    onChange={handleChange}
+                    fullWidth
+                  />
 
                   <Typography variant="body1" sx={{ mt: 2 }}>
                     Payment Method

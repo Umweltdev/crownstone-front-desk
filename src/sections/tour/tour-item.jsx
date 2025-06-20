@@ -68,10 +68,10 @@ export default function TourItem({ tour, onView, onEdit, onDelete }) {
     >
       {/* {!!priceSale && (
         <Box component="span" sx={{ color: 'grey.500', mr: 0.25, textDecoration: 'line-through' }}>
-          {`₦${priceSale.toLocaleString()}`}
+          {`€${priceSale.toLocaleString()}`}
         </Box>
       )} */}
-      {`₦${price.toLocaleString()}`}
+      {`€${price.toLocaleString()}`}
     </Stack>
   );
 

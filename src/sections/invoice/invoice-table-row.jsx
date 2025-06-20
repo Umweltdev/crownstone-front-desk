@@ -95,7 +95,7 @@ export default function InvoiceTableRow({
           />
         </TableCell>
 
-        <TableCell>{`₦${totalAmount.toLocaleString()} `}</TableCell>
+        <TableCell>{`€${totalAmount.toLocaleString()} `}</TableCell>
 
         {/* <TableCell align="center">{sent}</TableCell> */}
 

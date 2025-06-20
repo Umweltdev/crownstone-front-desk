@@ -66,7 +66,7 @@ export default function InvoiceDetails({ invoice }) {
         <TableCell colSpan={3} />
         <TableCell sx={{ typography: 'subtitle1' }}>Total</TableCell>
         <TableCell width={140} sx={{ typography: 'subtitle1' }}>
-          {`₦${invoice?.totalAmount.toLocaleString()}`}
+          {`€${invoice?.totalAmount.toLocaleString()}`}
         </TableCell>
       </StyledTableRow>
     </>
@@ -136,11 +136,11 @@ export default function InvoiceDetails({ invoice }) {
 
                 <TableCell>{row?.quantity}</TableCell>
 
-                <TableCell align="right"> {`₦${row.price.toLocaleString()}`}</TableCell>
+                <TableCell align="right"> {`€${row.price.toLocaleString()}`}</TableCell>
 
                 <TableCell align="right">
                   {' '}
-                  {`₦${(row.total).toLocaleString()}`}
+                  {`€${(row.total).toLocaleString()}`}
                 </TableCell>
               </TableRow>
             ))}

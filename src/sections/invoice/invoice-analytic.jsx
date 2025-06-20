@@ -54,7 +54,7 @@ export default function InvoiceAnalytic({ title, total, icon, color, percent, pr
           {fShortenNumber(total)} invoices
         </Box>
 
-        <Typography variant="subtitle2">{`₦${price.toLocaleString()}`}</Typography>
+        <Typography variant="subtitle2">{`€${price.toLocaleString()}`}</Typography>
       </Stack>
     </Stack>
   );

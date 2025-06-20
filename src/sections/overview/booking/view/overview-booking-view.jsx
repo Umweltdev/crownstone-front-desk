@@ -149,7 +149,7 @@ export default function OverviewBookingView() {
 
         <Grid xs={12} md={4}>
           <BookingWidgetSummary
-            naira="₦"
+            naira="€"
             title="Total Rooms Sold"
             total={sumAmount}
             icon={<CheckInIllustration />}
@@ -170,7 +170,7 @@ export default function OverviewBookingView() {
               <BookingTotalIncomes
                 title="Monthly Total Income"
                 total={monthlyTotalPrice}
-                naira="₦"
+                naira="€"
                 percent={2.6}
                 chart={{
                   series: [

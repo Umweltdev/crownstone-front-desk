@@ -282,7 +282,7 @@ export default function OverviewAppView() {
           />
         </Grid>
 
-        <Grid xs={12} lg={8}>
+        {/* <Grid xs={12} lg={8}>
           <AppNewInvoice
             title="New Invoice"
             tableLabels={[
@@ -293,7 +293,7 @@ export default function OverviewAppView() {
               { id: '', label: '' }, // Ensure the last column has a label, even if empty
             ]}
           />
-        </Grid>
+        </Grid> */}
 
         {/* <Grid xs={12} md={6} lg={4}>
           <AppTopRelated title="Top Rated Meals" list={_appRelated} />

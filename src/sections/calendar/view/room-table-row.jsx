@@ -27,7 +27,7 @@ export default function RoomTableRow({ row, selected, onEditRow, onDeleteRow }) 
       <TableRow hover selected={selected}>
         <TableCell>{title}</TableCell>
         <TableCell>{roomsAvailable}</TableCell>
-        <TableCell>{`₦${price.toLocaleString()}`}</TableCell>
+        <TableCell>{`€${price.toLocaleString()}`}</TableCell>
         <TableCell>{maxPeople} Adults</TableCell>
         <TableCell>
           {description?.length > 50 ? `${description?.substring(0, 30)}...` : description}

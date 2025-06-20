@@ -118,7 +118,7 @@ export default function BookingCheckInWidgets({ chart, ...other }) {
 
             <div>
               <Typography variant="h4" sx={{ mb: 0.5 }}>
-                ₦{fNumber(item.total)}
+                €{fNumber(item.total)}
               </Typography>
 
               <Typography variant="body2" sx={{ opacity: 0.72 }}>

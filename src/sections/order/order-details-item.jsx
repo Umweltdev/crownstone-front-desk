@@ -103,7 +103,7 @@ export default function OrderDetailsItems({ items, totalAmount }) {
                 <Box>
                   <ListItemText
                     primary={`${room?.roomId?.roomType?.title}, Room #${room?.roomId?.roomNumber}`}
-                    secondary={`₦${room?.tPrice?.toLocaleString()}`}
+                    secondary={`€${room?.tPrice?.toLocaleString()}`}
                     primaryTypographyProps={{ typography: 'subtitle1' }}
                     secondaryTypographyProps={{ color: 'text.secondary' }}
                   />
@@ -123,7 +123,7 @@ export default function OrderDetailsItems({ items, totalAmount }) {
 
                 <Stack direction="row" justifyContent="space-between">
                   <Label variant="soft">Total</Label>
-                  <Box sx={{ typography: 'subtitle2' }}>{`₦${room?.tPrice?.toLocaleString()}`}</Box>
+                  <Box sx={{ typography: 'subtitle2' }}>{`€${room?.tPrice?.toLocaleString()}`}</Box>
                 </Stack>
               </Stack>
             </Box>
@@ -143,7 +143,7 @@ export default function OrderDetailsItems({ items, totalAmount }) {
         <Stack spacing={2} alignItems="flex-end" sx={{ my: 3, textAlign: 'right', typography: 'body2' }}>
           <Stack direction="row" sx={{ typography: 'subtitle1' }}>
             <Box>Total</Box>
-            <Box sx={{ width: 160 }}>{`₦${(totalAmount + Number(additionalCharges))?.toLocaleString()}` || '-'}</Box>
+            <Box sx={{ width: 160 }}>{`€${(totalAmount + Number(additionalCharges))?.toLocaleString()}` || '-'}</Box>
           </Stack>
         </Stack>
 

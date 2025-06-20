@@ -1,6 +1,6 @@
 // src/utils/formatAmount.js
 export const formatNairaAmount = (amount) => {
-  if (amount === null || amount === undefined) return '₦0';
+  if (amount === null || amount === undefined) return '€0';
 
   let formattedAmount;
   const absAmount = Math.abs(amount); // Handle negative values
@@ -16,12 +16,12 @@ export const formatNairaAmount = (amount) => {
     formattedAmount = absAmount.toFixed(2); // For smaller amounts
   }
 
-  return `${sign}₦${formattedAmount}`;
+  return `${sign}€${formattedAmount}`;
 };
 
 
 export const formatNairaAmountLong = (amount) => {
-  if (amount === null || amount === undefined) return '₦0';
+  if (amount === null || amount === undefined) return '€0';
 
   const absAmount = Math.abs(amount); // Handle negative values
   const sign = amount < 0 ? '-' : ''; // Preserve sign
@@ -32,5 +32,5 @@ export const formatNairaAmountLong = (amount) => {
     maximumFractionDigits: 2,
   });
 
-  return `${sign}₦${formattedAmount}`;
+  return `${sign}€${formattedAmount}`;
 };

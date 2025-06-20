@@ -172,10 +172,10 @@ const CheckoutPage = ({ roomDetails }) => {
             <Divider sx={{ my: 2 }} />
             <Typography variant="body2">Room: {room.roomNumber}</Typography>
             <Typography variant="body2">
-              Price per Night: ₦{room.price?.toLocaleString()}
+              Price per Night: €{room.price?.toLocaleString()}
             </Typography>
             <Typography variant="h6" sx={{ mt: 1 }}>
-              Total Price: ₦{totalPrice.toLocaleString()}
+              Total Price: €{totalPrice.toLocaleString()}
             </Typography>
           </Box>
         </Paper>

@@ -61,7 +61,7 @@ import UserTableFiltersResult from '../user-table-filters-result';
 
 const TABLE_HEAD = [
   { id: 'customerName', label: 'Customer Name' },
-  { id: 'status', label: 'Price (₦)', width: 170 },
+  { id: 'status', label: 'Price (€)', width: 170 },
   { id: 'orderNumber', label: 'Booking ID', width: 200 },
   { id: 'roomType', label: 'Room Type', width: 200 },
   { id: 'roomNumber', label: 'Room Number', width: 150 },

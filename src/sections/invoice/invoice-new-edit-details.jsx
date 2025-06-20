@@ -78,13 +78,13 @@ export default function InvoiceNewEditDetails() {
       <Stack direction="row">
         <Box sx={{ color: 'text.secondary' }}>Subtotal</Box>
         <Box sx={{ width: 160, typography: 'subtitle2' }}>
-          {`₦${subTotal.toLocaleString()}` || '-'}
+          {`€${subTotal.toLocaleString()}` || '-'}
         </Box>
       </Stack>
 
       <Stack direction="row" sx={{ typography: 'subtitle1' }}>
         <Box>Total</Box>
-        <Box sx={{ width: 160 }}>{`₦${totalAmount.toLocaleString()}` || '-'}</Box>
+        <Box sx={{ width: 160 }}>{`€${totalAmount.toLocaleString()}` || '-'}</Box>
       </Stack>
     </Stack>
   );
@@ -138,7 +138,7 @@ export default function InvoiceNewEditDetails() {
                 InputProps={{
                   startAdornment: (
                     <InputAdornment position="start">
-                      <Box sx={{ typography: 'subtitle2', color: 'text.disabled' }}>₦</Box>
+                      <Box sx={{ typography: 'subtitle2', color: 'text.disabled' }}>€</Box>
                     </InputAdornment>
                   ),
                 }}

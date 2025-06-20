@@ -164,7 +164,7 @@ export default function ReservationTableRow({
         </TableCell>
 
         <TableCell>{orderNumber}</TableCell>
-        <TableCell>{`₦${totalPrice?.toLocaleString()}`}</TableCell>
+        <TableCell>{`€${totalPrice?.toLocaleString()}`}</TableCell>
         <TableCell>{status}</TableCell>
         <TableCell>{paymentMode}</TableCell>
         <TableCell>{rooms.length} Room(s)</TableCell>
@@ -261,7 +261,7 @@ export default function ReservationTableRow({
             Payment Mode: {paymentMode}
           </Typography>
           <Typography variant="body1" gutterBottom>
-            Total Price: ₦{totalPrice?.toLocaleString()}
+            Total Price: €{totalPrice?.toLocaleString()}
           </Typography>
 
           <Typography variant="h6" sx={{ mt: 2 }}>
@@ -284,7 +284,7 @@ export default function ReservationTableRow({
                   <TableCell>{room.roomId?.roomType?.title || 'N/A'}</TableCell>
                   <TableCell>{new Date(room.checkIn).toLocaleString()}</TableCell>
                   <TableCell>{new Date(room.checkOut).toLocaleString()}</TableCell>
-                  <TableCell>{`₦${room.tPrice?.toLocaleString()}`}</TableCell>
+                  <TableCell>{`€${room.tPrice?.toLocaleString()}`}</TableCell>
                 </TableRow>
               ))}
             </TableBody>

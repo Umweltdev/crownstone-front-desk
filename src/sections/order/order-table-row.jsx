@@ -74,7 +74,7 @@ export default function OrderTableRow({ row, selected, onViewRow, onSelectRow, o
 
       <TableCell sx={{ borderBottom: 'none' }}>
         <Typography fontWeight="medium">
-          ₦{totalPrice.toLocaleString()}
+          €{totalPrice.toLocaleString()}
         </Typography>
       </TableCell>
 
@@ -168,7 +168,7 @@ export default function OrderTableRow({ row, selected, onViewRow, onSelectRow, o
                   Price
                 </Typography>
                 <Typography variant="h6" color="primary.main">
-                  ₦{totalPrice.toLocaleString()}
+                  €{totalPrice.toLocaleString()}
                 </Typography>
               </Paper>
 
